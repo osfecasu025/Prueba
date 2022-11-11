@@ -8,8 +8,83 @@
 </head>
 <body>
     <div class="container">
-        <h4>esta monda es mia</h4>
-
+        <form action="../Controlador/Registro2.php" method="post" class="row g-3 needs-validation" enctype="multipart/form-data">
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">CODIGO</label>
+              <div class="input-group">
+                <span class="input-group-text" id="inputGroupPrepend2"><i class="fi fi-br-hastag"></i></span>
+                <input type="text" name="codigo" class="form-control" id="validationCustom01" required>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">N° DE DOCUMENTO</label>
+              <div class="input-group">
+                <span class="input-group-text" id="inputGroupPrepend2"><i class="fi fi-br-hastag"></i></span>
+                <input type="text" name="documento" class="form-control" id="validationCustom01" required>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustomUsername" class="form-label">NOMBRE COMPLETO</label>
+             
+              <div class="input-group">
+                <span class="input-group-text" id="inputGroupPrepend2"><i class="fi fi-sr-user"></i></span>
+                <input type="text" name="nombre" class="form-control" id="validationCustom01" required>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom03" class="form-label">DIRECCION</label>
+    
+              <div class="input-group">
+                <span class="input-group-text" id="inputGroupPrepend2"><i class="fi fi-rs-marker"></i></span>
+                <input type="text" name="direccion" class="form-control" id="validationCustom01" required>
+              </div>
+    
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom04" class="form-label">TELEFONO</label>
+              <div class="input-group">
+                <span class="input-group-text" id="inputGroupPrepend2"><i class="fi fi-sr-phone-call"></i></span>
+                <input type="text" name="telefono" class="form-control" id="validationCustom01" required>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom04" class="form-label">CORREO</label>
+              <div class="input-group">
+                <span class="input-group-text" id="inputGroupPrepend2"><i class="fi fi-sr-envelope"></i></span>
+                <input type="text" name="correo" class="form-control" id="validationCustom01" required>
+              </div>
+            </div>
+            <!--===  accept = "image/*" es para solo aceptar archivos de tipo imagenes===-->
+            <div class="col-md-3">
+              <label for="validationCustom05" class="form-label">N° CONSIGNACION</label>
+              <div class="input-group">
+                <span class="input-group-text" id="inputGroupPrepend2"><i class="fi fi-sr-credit-card"></i></span>
+                <input type="text" name="consignacion" class="form-control" id="validationCustom01"required  >
+              </div>
+    
+             </div>
+            
+             <div class="col-md-6">
+              <label for="validationCustom05" class="form-label">COMPROBANTE DE PAGO</label>
+              <div class="input-group">
+                <span class="input-group-text" id="inputGroupPrepend2"><i class="fi fi-sr-document"></i></span>
+                <input type="text" name="comprobante" class="form-control" id="validationCustom01"  >
+              </div>
+    
+                </div>
+                <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input bg-danger" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Autorizacion para el tramiento de datos personales.
+                </label>
+               
+              </div>
+                </div>
+                <div class="col-12">
+              <button  class="btn btn-danger" name="registro" type="submit">Registrar</button>
+            </div>
+          </form>
     </div>
     
 </body>
